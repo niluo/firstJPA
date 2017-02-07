@@ -26,6 +26,7 @@ public class BookPageController {
     public String index(Model model) {
         List<Book> bookList = bookService.findAll();
         model.addAttribute("bookList", bookList);
+        System.out.println("aaaaaaaaaaaaaaaaaaaabb");
         return "index";
     }
 
